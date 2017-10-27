@@ -11,13 +11,13 @@ Compile SDK Version : API 26
 > **Note:**
 
 > - ADOP_SDK_Android_2.0.0
-> : libs : You have to include jar files in the project (see guide for details).
-> : drawable : You have to include house banners in your project (see guide for details).
+> -- libs : You have to include jar files in the project (see guide for details).
+> -- drawable : You have to include house banners in your project (see guide for details).
 > - Samples
-> : AdopBannerSample : Sample project files for banner advertising.
-> : AdopEndingPopUpSample : Sample project files for Ending pop-up advertising.
-> : AdopInterstitialSample : Sample project files for Interstitial.
-> : AdopNativeTemplateSample : Sample project files for Native template advertising.
+> -- AdopBannerSample : Sample project files for banner advertising.
+> -- AdopEndingPopUpSample : Sample project files for Ending pop-up advertising.
+> -- AdopInterstitialSample : Sample project files for Interstitial.
+> -- AdopNativeTemplateSample : Sample project files for Native template advertising.
 > - AdopSDK_Android_v2.0.0_Developer_Guide.pdf : Developer Guide(ENG)
 > - AdopSDK_Android_v2.0.0_개발자_가이드.pdf : Developer Guide(KOR)
 
