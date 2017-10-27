@@ -2,8 +2,9 @@
 
 This is Adop Android SDK.
 
-
+—
 Minimum SDK Version : API 16
+—
 Compile SDK Version : API 26
 
 ## Github File Path description
