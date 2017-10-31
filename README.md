@@ -12,6 +12,8 @@ Compile SDK Version : API 26
 > **Note:**
 > - **ADOP_SDK_Android_2.0.0**
 >   - **libs** : You have to include jar files in the project (see guide for details).
+>     - **AdopSDK-A-2.0.0.jar** : For Android Studio.
+      - **AdopSDK-E-2.0.0.jar** : For Eclipse.
 >   - **drawable** : You have to include house banners in your project (see guide for details).
 > - **Samples**
 >   - **AdopBannerSample** : Sample project files for banner advertising.
