@@ -30,5 +30,5 @@ dependencies {
 
     compile 'com.google.android.gms:play-services-ads:11.2.0'
     compile 'com.facebook.android:audience-network-sdk:4.+'
-    compile 'com.avocarrot.sdk:mediation-sdk-nativead:4.6.0'
+    compile 'com.avocarrot.sdk:mediation-sdk-nativead:4.7.1'
 }
