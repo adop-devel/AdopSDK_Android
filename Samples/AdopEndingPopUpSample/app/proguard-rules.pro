@@ -32,6 +32,8 @@
 -keep class com.adop.sdk.nativead.CustomNativeImageView { public *; }
 -keep class com.adop.sdk.nativead.CustomDialog { public *; }
 -keep class com.adop.sdk.AdEntry { public *; }
+-keep class com.adop.sdk.interstitial.InterstitialAdopActivity { *; }
+-keep class com.adop.sdk.interstitial.InterstitialAdop { *; }
 
 #InterstitialCauly
 -dontwarn com.fsn.cauly.**

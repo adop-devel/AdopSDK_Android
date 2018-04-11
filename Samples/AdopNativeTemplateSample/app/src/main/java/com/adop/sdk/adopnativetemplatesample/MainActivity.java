@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mNativeTemp.setHouseTitleText("ADOP");
         mNativeTemp.setHouseBodyText("For Advertising Revenue Optimization, Let’s be together with the ADOP.");
         mNativeTemp.setHouseIconImage(R.drawable.adop_logo);
-        mNativeTemp.setHouseMainImage(R.drawable.house_300x250);
+        mNativeTemp.setHouseMainImage(R.drawable.adop_house_300x250);
 
         nativeAdContainer.addView(mNativeTemp);
 

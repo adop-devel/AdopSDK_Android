@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         mCustomDialog.setHouseTitleText("ADOP");   // 하우스광고 노출시 타이틀
         mCustomDialog.setHouseBodyText("For Advertising Revenue Optimization, Let’s be together with the ADOP.");  // 하우스광고 노출시 본문
         mCustomDialog.setHouseIconImage(R.drawable.adop_logo); // 하우스광고 노출시 아이콘 이미지
-        mCustomDialog.setHouseMainImage(R.drawable.house_300x250);  // 하우스광고 노출시 메인 이미지
+        mCustomDialog.setHouseMainImage(R.drawable.adop_house_300x250);  // 하우스광고 노출시 메인 이미지
         mCustomDialog.load();   // 종료광고 실행
     }
 

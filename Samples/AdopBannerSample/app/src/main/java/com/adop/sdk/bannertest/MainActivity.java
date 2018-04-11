@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         layout = (ConstraintLayout)findViewById(R.id.bannerLayout);
         mAdView = new BaseAdView(MainActivity.this);
-        mAdView.setHouseImg(R.drawable.house);
+        mAdView.setHouseImg(R.drawable.adop_house_320x50);
         mAdView.setAdInfo(ZONE_ID);
-        mAdView.setGravity(Gravity. CENTER );
+        mAdView.setGravity(Gravity.CENTER);
         mAdView.setInterval(30);
 
         layout.addView(mAdView);

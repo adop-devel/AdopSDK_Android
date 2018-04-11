@@ -25,6 +25,7 @@
         </activity>
 
         <activity android:name="com.facebook.ads.InterstitialAdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.adop.sdk.interstitial.InterstitialAdopActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
         <activity android:name="com.mobfox.sdk.interstitialads.InterstitialActivity" android:hardwareAccelerated="true" />
         <service android:name="com.mobfox.sdk.services.MobFoxService" android:launchMode="singleTop" />
 
