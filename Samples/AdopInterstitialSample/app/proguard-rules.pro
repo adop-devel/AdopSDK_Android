@@ -30,11 +30,13 @@
 -keep class com.adop.sdk.nativead.BaseNativeAd { public *; }
 -keep class com.adop.sdk.nativead.BaseNativeTemplateAd { public *; }
 -keep class com.adop.sdk.nativead.CustomNativeImageView { public *; }
+-keep class com.adop.sdk.nativead.CustomNativeIconView { public *; }
 -keep class com.adop.sdk.nativead.CustomDialog { public *; }
 -keep class com.adop.sdk.AdEntry { public *; }
+-keep class com.adop.sdk.interstitial.InterstitialAdopActivity { *; }
+-keep class com.adop.sdk.interstitial.InterstitialAdop {*;}
 
-#Cauly
--dontwarn com.fsn.cauly.**
+#InterstitialCauly
 -keep public class com.fsn.cauly.** {
 public protected *;
 }
@@ -42,11 +44,11 @@ public protected *;
 public protected *;
 }
 
-#Facebook
+#AdViewFacebook
 -keep class com.facebook.ads.** { *; }
 -dontwarn com.facebook.ads.**
 
-#Google
+#AdViewGoogle
 -keep class com.google.android.gms.** { *; }
 -dontwarn com.google.android.gms.**
 
@@ -55,13 +57,9 @@ public protected *;
 -keep class com.mobfox.adapter.** {*;} 
 -keep class com.mobfox.sdk.** {*;}
 
-#Avocarrot
--keep class com.avocarrot.** { *; }
- -dontwarn com.avocarrot.**
-
 #DawinClick
 -keep class com.skplanet.tad.** { *; }
- -dontwarn com.skplanet.tad.**
+-dontwarn com.skplanet.tad.**
 -keep class * extends java.util.ListResourceBundle {
     protected Object[][] getContents();
 }
@@ -75,3 +73,7 @@ public protected *;
 -keepnames class * implements android.os.Parcelable {
     public static final ** CREATOR;
 }
+
+-dontnote android.net.http.*
+-dontnote org.apache.commons.codec.**
+-dontnote org.apache.http.**
