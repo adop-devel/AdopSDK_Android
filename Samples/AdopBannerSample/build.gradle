@@ -18,9 +18,6 @@ allprojects {
         jcenter()
         google()
         maven {
-            url "https://maven.google.com"
-        }
-        maven {
             url "https://s3.amazonaws.com/avocarrot-android-builds/dist/"
         }
     }
