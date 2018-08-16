@@ -23,7 +23,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
-#Adop
+#adop
 -dontwarn android.webkit.**
 -keep class com.adop.sdk.adview.BaseAdView { public *; }
 -keep class com.adop.sdk.interstitial.BaseInterstitial { public *; }
@@ -36,7 +36,11 @@
 -keep class com.adop.sdk.interstitial.InterstitialAdopActivity { *; }
 -keep class com.adop.sdk.interstitial.InterstitialAdop {*;}
 
-#InterstitialCauly
+-dontnote android.net.http.*
+-dontnote org.apache.commons.codec.**
+-dontnote org.apache.http.**
+
+##InterstitialCauly
 -keep public class com.fsn.cauly.** {
 public protected *;
 }
@@ -57,6 +61,10 @@ public protected *;
 -keep class com.mobfox.adapter.** {*;} 
 -keep class com.mobfox.sdk.** {*;}
 
+#NativeAvocarrot
+-dontobfuscate
+-dontwarn com.squareup.okhttp.**
+
 #DawinClick
 -keep class com.skplanet.tad.** { *; }
 -dontwarn com.skplanet.tad.**
@@ -73,7 +81,3 @@ public protected *;
 -keepnames class * implements android.os.Parcelable {
     public static final ** CREATOR;
 }
-
--dontnote android.net.http.*
--dontnote org.apache.commons.codec.**
--dontnote org.apache.http.**

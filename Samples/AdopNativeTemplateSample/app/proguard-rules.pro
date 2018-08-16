@@ -30,11 +30,17 @@
 -keep class com.adop.sdk.nativead.BaseNativeAd { public *; }
 -keep class com.adop.sdk.nativead.BaseNativeTemplateAd { public *; }
 -keep class com.adop.sdk.nativead.CustomNativeImageView { public *; }
+-keep class com.adop.sdk.nativead.CustomNativeIconView { public *; }
 -keep class com.adop.sdk.nativead.CustomDialog { public *; }
 -keep class com.adop.sdk.AdEntry { public *; }
+-keep class com.adop.sdk.interstitial.InterstitialAdopActivity { *; }
+-keep class com.adop.sdk.interstitial.InterstitialAdop {*;}
+
+-dontnote android.net.http.*
+-dontnote org.apache.commons.codec.**
+-dontnote org.apache.http.**
 
 #InterstitialCauly
--dontwarn com.fsn.cauly.**
 -keep public class com.fsn.cauly.** {
 public protected *;
 }
@@ -47,5 +53,5 @@ public protected *;
 -dontwarn com.facebook.ads.**
 
 #NativeAvocarrot
--keep class com.avocarrot.** { *; }
--dontwarn com.avocarrot.**
+-dontobfuscate
+-dontwarn com.squareup.okhttp.**
