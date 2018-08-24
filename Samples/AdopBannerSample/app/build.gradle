@@ -18,6 +18,12 @@ android {
     }
 }
 
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.1'
@@ -27,8 +33,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     implementation 'com.google.android.gms:play-services-ads:15.0.1'
-    implementation 'com.facebook.android:audience-network-sdk:4.99.1'
+//    implementation 'com.facebook.android:audience-network-sdk:4.99.1'
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'com.avocarrot.sdk:mediation-sdk-nativead:4.10.1'
     implementation 'com.danikula:videocache:2.7.0'
+
+    implementation (name: 'ads-release', ext: 'aar')
+    implementation (name: 'FBAudienceNetworkBiddingKit-release', ext: 'aar')
 }

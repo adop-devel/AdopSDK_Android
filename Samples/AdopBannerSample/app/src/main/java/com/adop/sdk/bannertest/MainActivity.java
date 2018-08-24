@@ -9,7 +9,7 @@ import com.adop.sdk.adview.BaseAdView;
 
 public class MainActivity extends AppCompatActivity {
 
-    static String ZONE_ID = "7473ed8e-7a9c-48de-8bd7-759f3cd12042";
+    static String ZONE_ID = "66039814-e20b-42f8-b0a3-5c12ab6a8f32";
     ConstraintLayout layout;
     private BaseAdView mAdView;
 
